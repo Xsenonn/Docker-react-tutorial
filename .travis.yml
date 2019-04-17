@@ -4,3 +4,6 @@ services:
 
 before_install:
   - docker build -t xsenonn/Docker-react-tutorial -f Dockerfile.dev .
+
+script:
+  - docker run xsenonn/Docker-react-tutorial npm run test -- --coverage
